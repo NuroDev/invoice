@@ -13,6 +13,8 @@
 		0301EE4423CB98F7001FC20B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0301EE4323CB98F7001FC20B /* Assets.xcassets */; };
 		0301EE4723CB98F7001FC20B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0301EE4623CB98F7001FC20B /* Preview Assets.xcassets */; };
 		0301EE4A23CB98F7001FC20B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0301EE4823CB98F7001FC20B /* LaunchScreen.storyboard */; };
+		0334A08523CB999B005B9719 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0334A08423CB999B005B9719 /* SplashScreen.swift */; };
+		0334A08723CB99D7005B9719 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0334A08623CB99D7005B9719 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		0301EE4623CB98F7001FC20B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0301EE4923CB98F7001FC20B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0301EE4B23CB98F7001FC20B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0334A08423CB999B005B9719 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		0334A08623CB99D7005B9719 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +60,14 @@
 		0301EE3C23CB98F5001FC20B /* invoice */ = {
 			isa = PBXGroup;
 			children = (
+				0334A08223CB9945005B9719 /* Views */,
+				0301EE4B23CB98F7001FC20B /* Info.plist */,
 				0301EE3D23CB98F5001FC20B /* AppDelegate.swift */,
 				0301EE3F23CB98F5001FC20B /* SceneDelegate.swift */,
-				0301EE4123CB98F5001FC20B /* ContentView.swift */,
 				0301EE4323CB98F7001FC20B /* Assets.xcassets */,
 				0301EE4823CB98F7001FC20B /* LaunchScreen.storyboard */,
-				0301EE4B23CB98F7001FC20B /* Info.plist */,
 				0301EE4523CB98F7001FC20B /* Preview Content */,
+				0334A08623CB99D7005B9719 /* Extensions.swift */,
 			);
 			path = invoice;
 			sourceTree = "<group>";
@@ -73,6 +78,15 @@
 				0301EE4623CB98F7001FC20B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0334A08223CB9945005B9719 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0301EE4123CB98F5001FC20B /* ContentView.swift */,
+				0334A08423CB999B005B9719 /* SplashScreen.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +160,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0334A08723CB99D7005B9719 /* Extensions.swift in Sources */,
+				0334A08523CB999B005B9719 /* SplashScreen.swift in Sources */,
 				0301EE3E23CB98F5001FC20B /* AppDelegate.swift in Sources */,
 				0301EE4023CB98F5001FC20B /* SceneDelegate.swift in Sources */,
 				0301EE4223CB98F5001FC20B /* ContentView.swift in Sources */,
