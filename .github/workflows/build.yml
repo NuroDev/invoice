@@ -1,0 +1,25 @@
+name: 🔨 Build
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: macos-latest
+    strategy:
+      matrix:
+        destination:
+          - 'platform=iOS Simulator,OS=13.3,name=iPhone 11'
+          - 'platform=iOS Simulator,OS=13.3,name=iPhone 11 Pro'
+          - 'platform=iOS Simulator,OS=13.3,name=iPhone 11 Pro Max'
+        xcode:
+          - '/Applications/Xcode_11.3.app/Contents/Developer'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Build
+        run: |
+          cd invoice
+          xcodebuild clean build -project invoice.xcodeproj -scheme invoice -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
+        env: 
+         destination: ${{ matrix.destination }}
