@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var isFirstLaunch: Bool = true
-
+    
     var body: some View {
         TabView {
             NavigationView {
@@ -34,7 +34,7 @@ struct ContentView: View {
                 Text("Dashboard")
             }
             .tag(1)
-
+            
             NavigationView {
                 VStack {
                     Image(systemName: "rectangle.stack.fill")
@@ -49,7 +49,7 @@ struct ContentView: View {
                     .accessibility(hidden: true)
                 Text("Documents")
             }.tag(2)
-
+            
             NavigationView {
                 VStack {
                     Image(systemName: "person.2.fill")
@@ -64,7 +64,7 @@ struct ContentView: View {
                     .accessibility(hidden: true)
                 Text("Clients")
             }.tag(3)
-
+            
             NavigationView {
                 VStack {
                     Image(systemName: "gear")
