@@ -8,9 +8,9 @@ jobs:
     strategy:
       matrix:
         destination:
-          - 'platform=iOS Simulator,OS=13.3,name=iPhone 11'
-          - 'platform=iOS Simulator,OS=13.3,name=iPhone 11 Pro'
-          - 'platform=iOS Simulator,OS=13.3,name=iPhone 11 Pro Max'
+          - 'platform=iOS Simulator,OS=13.2.2,name=iPhone 11'
+          - 'platform=iOS Simulator,OS=13.2.2,name=iPhone 11 Pro'
+          - 'platform=iOS Simulator,OS=13.2.2,name=iPhone 11 Pro Max'
         xcode:
           - '/Applications/Xcode_11.3.app/Contents/Developer'
     steps:
