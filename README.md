@@ -8,4 +8,8 @@
   [![Gitmoji](https://img.shields.io/badge/-%20%F0%9F%98%9C-FFDD67.svg?longCache=true&style=for-the-badge)](https://gitmoji.carloscuesta.me/) 
 
   <br />
+
+  <img alt="Screenshot" src="./assets/screenshot_1.png" width="256px" />
+  <img alt="Screenshot" src="./assets/screenshot_2.png" width="256px" />
+
 </div>
